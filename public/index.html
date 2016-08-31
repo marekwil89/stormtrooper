@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="utf-8">
+    <title>Stormtrooper quiz</title>
+    <meta name="viewport" content="width=device-width">
+
+    <!-- css & fonts -->
+
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&subset=latin-ext" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Russo+One&subset=latin-ext" rel="stylesheet">
+  </head>
+
+  <body>
+
+    <main class="wrapper">
+      <span class="dust"></span>
+
+      <header class="steps-box">
+        <span class="step is-active"></span>
+        <span class="step"></span>
+        <span class="step"></span>
+        <span class="step"></span>
+        <span class="step"></span>
+        <span class="step"></span>
+      </header>
+
+      <section class="slide is-showing">
+        <span class="empire_sign"></span>
+        <div class="info-box">
+          <h1>Rekrutacja</h1>
+          <p>Witamy w procesie rekrutacyjnym na żołnierza <span class="awarded">Galaktycznego Imperium</span>, zanim przejdziemy do do dalszej częśći szkolenia musimy zadać ci kilka pytań. Ich wynik zadecyduje o tym czy przejdziesz do kolejnego etapu. Jeżeli nie masz pytań naciśnij przycisk "ROZPOCZNIJ".</p>
+        </div>
+        <button class="btn next position">Rozpocznij</button>
+      </section>
+
+      <section class="slide">
+        <div class="info-box">
+          <h3>Do standardowego wyposażera szturmowca <span class="awarded">nie</span> należy:</h3>
+          <label>
+              <input type="radio" name="question0" value="0" /> Karabin blasterowy BlasTech E11 <br />
+          </label>
+          <label>
+              <input type="radio" name="question0" value="1" /> Powtarzalny blaster T21 <br />
+          </label>
+          <label>
+              <input type="radio" name="question0" value="2" /> Cięzki blaster DL-44 <br />
+          </label>
+
+        </div>
+        <button class="btn next position">dalej</button>
+        <span class="decal"></span>
+      </section>
+
+      <section class="slide">
+        <div class="info-box">
+          <h3>Który z wymienionych myśliwców TIE imperium jest podstawowym modelem</h3>
+          <label>
+            <input type="radio" name="question1" value="0" /> TIE Fighter <br />
+          </label>
+          <label>
+              <input type="radio" name="question1" value="1" /> TIE Interceptor <br />
+          </label>
+          <label>
+              <input type="radio" name="question1" value="2" /> TIE Bomber  <br />
+          </label>      
+        </div>
+        <button class="btn next position">dalej</button>
+      </section>
+
+      <section class="slide">
+        <div class="info-box">
+            <h3>Z ilu części składa się zbroja szturmowca bojowego ?</h3>
+            <label>
+              <input type="radio" name="question2" value="0" /> 13 Części<br />
+          </label>
+          <label>
+              <input type="radio" name="question2" value="1" /> 18 Części<br />
+          </label>
+          <label>
+              <input type="radio" name="question2" value="2" /> 2 Części<br />
+          </label>       
+        </div>
+        <button class="btn next position">dalej</button>
+      </section>
+
+      <section class="slide">
+        <div class="info-box">
+          <h3>Czy rasy inne niż człowiek mogą zasilić szeregi imperium ?</h3>
+          <label>
+            <input type="radio" name="question3" value="0" /> tak, w niektórych przypadkach <br />
+          </label>
+          <label>
+            <input type="radio" name="question3" value="1" /> Tak  <br />
+          </label>
+          <label>
+            <input type="radio" name="question3" value="2" /> Nie <br />
+          </label>
+        </div>
+        <button class="btn score next position">dalej</button>
+      </section>
+
+      <section class="slide">
+        <span class="empire_sign"></span>
+        <div class="info-box">
+          <h3>Wynik</h3>
+          <p class="final"></p>
+        </div>
+        <button class="btn next position">Powtórz</button>
+      </section>
+    </main>
+
+    <!-- javaScript scripts -->
+
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="assets/js/custom.js"></script>
+  </body>
+</html>

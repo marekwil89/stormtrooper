@@ -1,0 +1,156 @@
+.wrapper
+	box-sizing: border-box
+	display: flex
+	justify-content: center
+	align-items: center
+	flex-direction: column
+	min-height: 100vh
+	background-image: url('../img/back5.jpg')
+	background-repeat: no-repeat
+    background-size: cover
+    background-position: center
+	overflow: hidden
+	position: relative
+
+	.dust
+		position: absolute
+		top: 0
+		right: 0
+		left: 0
+		bottom: 0
+		background-position: bottom
+		background-size: cover
+		background-image: url('../img/dust.png')
+		background-repeat: repeat-x
+
+	.steps-box
+		border-radius: 25px 25px 0 0
+		box-sizing: border-box
+		z-index: 3
+		background: rgba(#151515, 0.95)
+		width: 800px
+		display: flex
+		justify-content: center
+		align-items: center
+		height: 70px
+		border-bottom: 1px solid #CCCCCC
+		position: relative
+		box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75)
+
+		.step
+			width: 10px
+			height: 10px
+			border-radius: 50%
+			margin: 5px
+			border: 1px solid #CCCCCC
+
+			&.is-active
+				background-color: #CCCCCC
+
+
+	.slide
+		border-radius: 0 0 25px 0
+		z-index: 3
+		background: rgba(#151515, 0.95)
+		box-sizing: border-box
+		width: 800px
+		display: none
+		position: relative
+		box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75)
+		overflow: hidden
+
+		.empire_sign
+			z-index: 1
+			position: absolute
+			bottom: -40px
+			left: -40px
+			width: 150px
+			height: 150px
+			background-size: cover
+			background-image: url('../img/empire_sign.png')
+
+
+		.decal
+			z-index: 1
+			position: absolute
+			bottom: -40px
+			left: -40px
+			width: 150px
+			height: 150px
+			background-size: cover
+			background-image: url('../img/decal.png')
+
+		&.is-showing
+			display: block
+
+		.info-box
+			min-height: 50vh
+			z-index: 3000
+			width: 600px
+			margin-right: auto
+			margin-left: auto		
+
+			
+			h1, h3
+				text-transform: uppercase
+				text-align: center
+				margin-bottom: 50px
+				font-family: 'Russo One', sans-serif
+				letter-spacing: 1.5px
+				line-height: 30px
+			
+			p
+				text-align: justify
+				margin-bottom: 50px
+				line-height: 30px
+
+			.final
+				text-align: center
+
+			label
+				z-index: 3000
+				margin-bottom: 20px
+				display: block
+				font-size: 18px
+				color: #DDDDDD
+				border-bottom: 1px solid #666666
+				padding: 20px 0
+				cursor: pointer
+
+				input[type="radio"]
+					margin-bottom: 0
+					border-bottom: none
+
+@media (max-width: 810px)
+	.wrapper
+		.steps-box
+			width: 100%
+			border-radius: 0px
+
+		.slide
+			width: 100%
+			border-radius: 0px
+
+@media (max-width: 610px)
+	.wrapper
+		.slide
+			.empire_sign
+				width: 130px
+				height: 130px
+
+			.decal
+				display: none
+
+			.info-box
+				width: 100%
+				
+				p
+					text-align: left
+					padding: 15px
+
+				label
+					padding: 20px
+
+
+.awarded
+	color: #a4555f
