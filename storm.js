@@ -12,5 +12,5 @@ app.use(express.static(__dirname + "/public"));
 
 app.use('/check', check)
 
-app.listen(6000);
-console.log("server running on port 6000")
+app.listen(9000);
+console.log("server running on port 9000")
